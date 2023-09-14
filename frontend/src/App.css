@@ -4,5 +4,25 @@
     background-image: linear-gradient(90deg, #002F52 35%, #326589 );
 }
 .app header{
+    display: flex;
     background-color: #FFF;
+}
+.app ul{
+    display: flex;
+
+}
+li{
+    list-style: none;
+}
+li p {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 120px;
+    height: 100%;
+    padding:  0 5px;
+    cursor: pointer;
+
 }
