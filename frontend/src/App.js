@@ -2,6 +2,7 @@
 import Header from './componentes/header/index';
 import styled from 'styled-components'
 import Pesquisa from './componentes/pesquisa';
+import UltimosLancamentos from './componentes/ultimosLancamentos/inedex';
 
 const AppContainer = styled.div`
 
@@ -9,9 +10,6 @@ const AppContainer = styled.div`
   height: 100vh;
   background-image: linear-gradient(90deg, #002F52 35%, #326589 );
 
-  li{
-  list-style: none;
-  padding: 10px;
 }
 `
 
@@ -20,6 +18,7 @@ function App() {
     <AppContainer>
       <Header/>
       <Pesquisa/>
+      <UltimosLancamentos/>
       
     </AppContainer>
   );

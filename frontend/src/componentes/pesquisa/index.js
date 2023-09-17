@@ -34,19 +34,20 @@ function Pesquisa() {
         placeholder="Escreva sua preoxima leitura"
         onBlur={(evento) => {
           const textoDigitado = evento.target.value;
-          const resuldadoPesquisa = livros.filter((livro) =>
-            livro.nome.includes(textoDigitado)
-          );
-          setLivrosPesquisados(resuldadoPesquisa);
+          
+          const resultadoPesquisa = livros.filter( livro => livro.nome.includes(textoDigitado))
+          setLivrosPesquisados(resultadoPesquisa)
+          
         }}
       />
       {livroPesqisados.map((livro) => (
         <div>
+          <img src={livro.src}/>
           <p>{livro.nome}</p>
-          <img src={livro.src} />
+           
         </div>
       ))}
     </PesquisaContainer>
-  );
+  )
 }
 export default Pesquisa;

@@ -13,7 +13,8 @@ const Icones = styled.ul`
     align-itens: center;
 `
 
-const icones = [ perfil, sacola ]
+const icones = [perfil, sacola]
+
 function IconesHeader (){
     return(
         <Icones>
